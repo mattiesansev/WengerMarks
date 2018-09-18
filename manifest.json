@@ -1,0 +1,57 @@
+{
+	"manifest version": 2,
+	"name": "WengerMarks",
+	"permissions": [
+		"bookmarks"],
+	"version": "2.1",
+	"description": "Bookmark files the Wenger way!",
+	"icons": {
+		"16": "default_icon_16.png",
+		"48": "default_icon_48.png",
+		"128": "default_icon_128.png"
+	},
+	"broswer_action": {
+		"default_icon":{
+			"16": "default_icon_16.png",
+			"24": "default_icon_24.png",
+			"32": "default_icon_32.png"
+		},
+		"default_title": "WengerMarks",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"chrome_ui_overrides" : {
+		"bookmarks_ui" : {
+			"remove_button": true,
+			"remove_bookmark_shortcut":true
+		}
+	},
+	"chrome_url_overrides":{
+		"bookmarks": "WengerMarks.html"
+	},
+	"externally_connectable": {
+		"ids": [
+			"*"],
+		"matches": [
+			"http://*/*",
+			"https://*/*"]
+	},
+	"file_system_provider_capabilities": {
+		"configurable": true,
+		"multiple_mounts": true,
+		"source": "netword"
+	},
+	//ADD TO THIS
+	"homepage_url": "http://path/to/homepage",
+	"incognito": "split",
+	"offline_enabled": true,
+	
+
+
+
+	
+
+}
